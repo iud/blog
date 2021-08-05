@@ -5,7 +5,7 @@
             #{{ $post->id }}
         </div>
         <div class="card-body">
-                <h5 class="card-title">{{ $post->title }}</h5>
+            <h5 class="card-title">{{ $post->title }}</h5>
             Komentarze:
             @foreach($post->comments as $comment)
                 <div class="row border-bottom">
