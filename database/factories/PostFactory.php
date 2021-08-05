@@ -21,8 +21,11 @@ class PostFactory extends Factory
      */
     public function definition()
     {
+        $date = $this->faker->dateTimeBetween("-20 days", "-10 days");
         return [
-            'title' => $this->faker->realText(50)
+            'title' => $this->faker->realText(50),
+            'created_at' => $date,
+            'updated_at' => $date
         ];
     }
 }

@@ -23,7 +23,8 @@ class CommentFactory extends Factory
     {
         return [
             'username' => $this->faker->userName(),
-            'content' => $this->faker->realText($this->faker->numberBetween(200, 300))
+            'content' => $this->faker->realText($this->faker->numberBetween(200, 300)),
+            'created_at' => $this->faker->dateTimeBetween('-8 days', now())
         ];
     }
 }

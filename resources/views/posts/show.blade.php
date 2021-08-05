@@ -11,7 +11,7 @@
                 <div class="row border-bottom">
                     <p>#{{ $comment->id }} by <strong>{{ $comment->username }}</strong></p>
                     <p>{{ $comment->content }}</p>
-                    <p><small>{{ $post->created_at }}</small></p>
+                    <p><small>{{ $comment->created_at }}</small></p>
                 </div>
             @endforeach
         </div>
